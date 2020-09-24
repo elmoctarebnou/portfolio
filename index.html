@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- linking the external css file -->
+    <link rel="stylesheet" href="style.css" />
+    <title>El Moctar Ebnou</title>
+  </head>
+  <body>
+    <header>
+      <!-- navigation var -->
+      <nav class="nav-bar">
+        <!-- navbar logo -->
+        <a class="logo" href="">{<span>EME</span>}</a>
+        <!-- navbar links -->
+        <ol>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#projects">WORK</a>
+          </li>
+          <li>
+            <a href="">BLOG</a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <!-- main body -->
+    <main>
+      <!-- landing introduction -->
+      <div class="intro">
+        <img src="/images/portfolio-pesonal-landing-picture.JPG" alt="" />
+        <h1>Hi, I'm EL Moctar</h1>
+        <h2>
+          I'm a Software Engineer from New Orleans, Louisiana.
+        </h2>
+        <h3>I enjoy writing clean, responsive and easy to maintain code.</h3>
+        <a href="#footer">CONTACT ME</a>
+      </div>
+      <hr />
+      <!-- about me -->
+      <div id="about" class="about">
+        <h1>ABOUT ME</h1>
+        <p>
+          My name is El Moctar Ebnou, I am a software
+          engineer. Skilled in building full-stack web applications using
+          ReactJS, Express, NodeJS, and PostgreSQL. Always improving my skills
+          and learning new technologies. In my spare time, I am a semi-pro
+          soccer player with New Orleans Jesters and an average lifter. If you
+          are looking to hire a new developer or have a web app project that you
+          would like to have done ASAP. Please reach out to me! I would love to
+          work with you or be part of your software engineers team. I have four
+          years of experience in decision-making, problem-solving, and
+          communication skills that I acquired throughout my years in business.
+          Some of the technologies that I know are HTML, CSS, JAVASCRIPT,
+          NODEJS, EXPRESS, and SQL.
+        </p>
+      </div>
+      <hr />
+      <h1>PREVIOUS WORK</h1>
+      <div id="projects" class="projects">
+        <div class="card">
+          <a href='https://blogeme-client.elmoctarebnou.vercel.app/' target="_blank">
+            <img src="/images/BLOGEME.png" alt="" />
+          </a>
+          <div class="card-detail">
+            <h2>BLOGEME</h2>
+            <h3>TECH STACK:</h3>
+            <p>React JS, Node JS, Express JS, PostgreSQL</p>
+            <a href="https://github.com/elmoctarebnou/blogeme-client">GitHub</a>
+          </div>
+        </div>
+        <div class="card">
+          <a href='https://elmoctarebnou.github.io/bookmarksapp-elmoctar/' target="_blank">
+            <img src="/images/Screen Shot 2020-09-24 at 1.23.58 AM.png" alt="" />
+          </a>
+          <div class="card-detail">
+            <h2>Bookmarks</h2>
+            <h3>TECH STACK:</h3>
+            <p>HTML, CSS, Jquery</p>
+            <a href="https://github.com/elmoctarebnou/bookmarksapp-elmoctar">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- footer with the contact and Copyright -->
+    <footer id="footer">
+      <section>
+        <h1>CONTACT ME</h1>
+        <form action="https://formspree.io/xeqrlway" method="POST">
+          <div>
+            <label for="user-name">Name:</label>
+            <input id="user-name" type="text" name="name" />
+          </div>
+          <div>
+            <label for="user-email">Email:</label>
+            <input id="user-email" type="text" name="email" />
+          </div>
+          <div>
+            <label for="user-message">Message:</label>
+            <textarea id="user-message" name="message"></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </section>
+      <div class="contact">
+        <h2>Email: ebnoumoctar@gmail.com</h2>
+        <ul>
+          <li>
+            <a href="https://github.com/elmoctarebnou" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/el-moctar-ebnou-1a55a1156/"
+              target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+      <p>Copyright &copy; 2020. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
