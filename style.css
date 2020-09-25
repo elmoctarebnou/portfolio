@@ -125,7 +125,7 @@ hr {
   letter-spacing: 2px;
 }
 .projects {
-  margin-top: 3rem;
+  margin: 3rem auto;
   display: flex;
   flex-direction: column;
 }
@@ -316,7 +316,7 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin: 5rem auto 0;
+    margin: 5rem auto;
   }
   .projects .card {
     width: 300px;
