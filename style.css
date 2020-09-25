@@ -270,7 +270,7 @@ footer p {
 }
 @media all and (min-device-width: 800px) {
   body {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
   }
   .nav-bar {
