@@ -1,10 +1,8 @@
 * {
-  /* setting margin and padding to 0 */
   margin: 0;
   padding: 0;
 }
 body {
-  /* setting font family and background color for the body */
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(255, 255, 255);
   color: rgb(37, 37, 37);
@@ -13,19 +11,16 @@ h1 {
   text-align: center;
 }
 p {
-  /* changing the line hight in all the paragraphs */
   line-height: 1.5rem;
 }
 
 hr {
-  /* break line style */
   color: rgb(37, 37, 37);
   border: 1px solid;
   width: 20rem;
   margin: 2rem auto;
 }
 .nav-bar {
-  /* changing the navigation bar properties */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,7 +59,6 @@ hr {
   color: rgb(121, 40, 40);
 }
 .nav-bar li a:hover {
-  /* adding hover effects for the navigation links */
   color: rgb(121, 40, 40);
   
 }
@@ -194,7 +188,6 @@ hr {
   margin: .2rem;
 }
 footer {
-  /* setting footer properties */
   background-color: rgb(37, 37, 37);
   display: flex;
   flex-direction: column;
@@ -272,14 +265,12 @@ footer p {
   margin: auto;
   color: rgb(156, 156, 156);
 }
-/* media query for large screens */
 @media all and (min-device-width: 800px) {
   body {
     max-width: 1200px;
     margin: 0 auto;
   }
   .nav-bar {
-    /* changing the navigation bar properties */
     display: flex;
     flex-direction: row;
     justify-content: space-between;
