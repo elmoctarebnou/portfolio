@@ -226,6 +226,7 @@ footer input {
 footer section textarea {
   width: 100%;
   height: 10rem;
+  font-size: 1.5rem;
 }
 footer section button {
   letter-spacing: 2px;
