@@ -62,7 +62,6 @@ hr {
   color: rgb(121, 40, 40);
   
 }
-
 .intro {
   display: flex;
   flex-direction: column;
@@ -71,10 +70,6 @@ hr {
   padding: 0 0.5rem 2rem 0.5rem;
   align-items: center;
 }
-.intro h1 {
-  letter-spacing: 1px;
-  color: rgb(37, 37, 37);
-}
 .intro img {
   margin-bottom: 1.5rem;
   height: 12rem;
@@ -82,21 +77,28 @@ hr {
   border-radius: 5%;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
-.intro h2 {
-  font-size: 1.8rem;
+.intro-detail h1 {
+  letter-spacing: 1px;
+  color: rgb(37, 37, 37);
 }
-.intro a {
+.intro-detail h2 {
+  font-size: 1.7rem;
+}
+.intro-detail h3{
+  font-size: 1.7rem;
+  margin-bottom: 3rem;
+}
+
+.intro-detail a {
   padding: .7rem;
   border: none;
   background-color: rgb(121, 40, 40);
-  padding: 1rem auto;
-  margin-top: 30px;
   border-radius: 5px;
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
 }
-.intro a:hover {
+.intro-detail a:hover {
   opacity: 0.95;
   transform: scale(.95);
   transition-duration: 100ms;
@@ -296,8 +298,20 @@ footer p {
     font-size: 1.5rem;
     line-height: 2rem;
   }
+  .intro {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .intro-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .intro-detail a {
+    width: 200px;
+  }
   .intro img {
-    margin-bottom: 1.5rem;
     height: 15rem;
     width: 15rem;
     
