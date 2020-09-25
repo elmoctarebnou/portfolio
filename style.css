@@ -19,7 +19,7 @@ p {
 
 hr {
   /* break line style */
-  color: gray;
+  color: rgb(37, 37, 37);
   border: 1px solid;
   width: 20rem;
   margin: 2rem auto;
@@ -79,7 +79,7 @@ hr {
 }
 .intro h1 {
   letter-spacing: 1px;
-  color: black;
+  color: rgb(37, 37, 37);
 }
 .intro img {
   margin-bottom: 1.5rem;
@@ -117,11 +117,6 @@ hr {
   font-size: 1.3rem;
   line-height: 2rem;
 }
-.about a {
-  text-decoration: none;
-  font-size: 1rem;
-  color: steelblue;
-}
 .about a:hover {
   color: rgb(121, 40, 40);
 }
@@ -138,6 +133,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: ;
   margin: 1rem;
   padding: .5rem;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
@@ -178,9 +174,8 @@ hr {
 .card-detail a {
   text-decoration: none;
   font-size: 1.5rem;
-  color: black;
   background-color: rgb(37, 37, 37);
-  color: rgb(223, 223, 223);
+  color: white;
   border-radius: 5px;
   box-shadow: 2px 2px 5px rgb(0, 0, 0);
   width: 80px;
@@ -205,7 +200,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 1.5rem;
-  color: rgb(160, 146, 146);
+  color: white;
   margin: 0 auto;
   
 }
@@ -328,6 +323,7 @@ footer p {
   }
   .projects .card {
     width: 300px;
+    height: 400px;
     margin: 1rem auto;
   }
   .card-detail {
