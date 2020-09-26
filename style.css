@@ -27,7 +27,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   background-color: rgb(37, 37, 37);
 }
 .nav-bar .logo {
@@ -73,6 +73,7 @@ hr {
   color: rgb(37, 37, 37);
   padding: 0 0.5rem 2rem 0.5rem;
   align-items: center;
+  height: 60vh;
 }
 .intro img {
   margin-bottom: 1.5rem;
