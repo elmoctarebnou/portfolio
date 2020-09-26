@@ -133,6 +133,7 @@ hr {
   font-size: 2rem;
   color: white;
   background-color: rgb(121, 40, 40);
+  border-radius: 5%;
 }
 .projects {
   margin: 3rem auto;
