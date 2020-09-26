@@ -324,6 +324,9 @@ footer p {
     font-size: 1.3rem;
    
   }
+  .intro {
+    height: 50vh;
+  }
   .intro img {
     height: 300px;
     width: 280px;;
