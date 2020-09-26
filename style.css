@@ -44,7 +44,7 @@ hr {
 .nav-bar ol {
   display: flex;
   flex-direction: row;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 .nav-bar li {
   list-style: none;
