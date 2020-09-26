@@ -135,6 +135,10 @@ hr {
   background-color: rgb(121, 40, 40);
   border-radius: 5%;
 }
+.skills ul li:hover{
+  transform: rotate(0.02turn);
+  transition-duration: 500ms;
+}
 .projects {
   margin: 3rem auto;
   display: flex;
@@ -153,6 +157,10 @@ hr {
   height: 500px;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
   border-radius: 3%;
+}
+.card:hover {
+  transform: rotateZ(3deg);
+  transition-duration: 500ms;
 }
 .card img {
   width: 18rem;
