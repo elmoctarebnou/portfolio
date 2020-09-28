@@ -34,12 +34,12 @@ hr {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
-  color: rgb(121, 40, 40);
+  color: #636B46;
   font-size: 4rem;
   letter-spacing: 5px; 
 }
 .logo span {
-  color: rgb(121, 40, 40);
+  color: #636B46;
 }
 .nav-bar ol {
   display: flex;
@@ -102,8 +102,8 @@ hr {
 
 .intro-detail a {
   border: none;
-  background-color: rgb(121, 40, 40);
-  border-radius: 5px;
+  background-color: #636B46;
+  border-radius: 15px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -117,6 +117,7 @@ hr {
 .intro-detail a:hover {
   opacity: 0.95;
   transform: scale(.95);
+  background-color: rgb(121, 40, 40);
   
 }
 .skills h1 {
@@ -135,13 +136,12 @@ hr {
   margin: .5rem 0;
   font-size: 2rem;
   color: white;
-  background-color: rgb(121, 40, 40);
-  border-radius: 5%;
+  background-color: rgb(37, 37, 37);
+  border-radius: 15px;
   transition-duration: 500ms;
 }
 .skills ul li:hover{
   transform: scale(1.1);
-  
 }
 .projects {
   margin: 3rem auto;
@@ -160,11 +160,11 @@ hr {
   width: 300px;
   height: 500px;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
-  border-radius: 3%;
+  border-radius: 15px;
   transition-duration: 500ms;
 }
 .card:hover {
-  transform: rotateZ(3deg);
+  transform: scale(1.05);
 }
 .card img {
   width: 18rem;
@@ -195,9 +195,9 @@ hr {
 #project-github {
   text-decoration: none;
   font-size: 1.5rem;
-  background-color: rgb(37, 37, 37);
+  background-color: #636B46;
   color: white;
-  border-radius: 5px;
+  border-radius: 15px;
   box-shadow: 2px 2px 5px rgb(0, 0, 0);
   text-align: center;
   width: 200px;
@@ -208,6 +208,7 @@ hr {
 #project-github:hover {
   opacity: 0.95;
   transform: scale(.95);
+  background-color: rgb(121, 40, 40);
   
   
 }
@@ -267,8 +268,8 @@ footer section button {
   width: 6rem;
   height: 2.5rem;
   border: none;
-  background-color: rgb(121, 40, 40);
-  border-radius: 5px;
+  background-color: #636B46;
+  border-radius: 15px;
   text-decoration: none;
   color: white;
   font-size: 1.3rem;
@@ -278,7 +279,7 @@ footer section button {
 footer section button:hover {
   opacity: 0.8;
   transform: scale(.95);
-  
+  background-color: rgb(121, 40, 40);
 }
 footer h2 {
   font-size: .9rem;
@@ -294,11 +295,12 @@ footer ul li {
 
 footer ul li a {
   text-decoration: none;
-  color: rgb(121, 40, 40);
+  color: #636B46;
   font-size: 1.5rem;
 }
 footer ul li a:hover {
   opacity: 0.6;
+  color: rgb(121, 40, 40);
 }
 footer p {
   margin: auto;
@@ -317,7 +319,7 @@ footer p {
   }
   .nav-bar .logo {
     padding: 1rem;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
   .nav-bar ol {
     display: flex;
