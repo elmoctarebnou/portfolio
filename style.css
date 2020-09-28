@@ -174,7 +174,7 @@ hr {
 .card h2 {
   margin-bottom: 1rem;
   text-align: center;
-  color: rgb(121, 40, 40);
+  color: black;
 }
 .card-detail {
   display: flex;
