@@ -466,4 +466,10 @@ footer p {
   footer{
     width: 90vw;
   }
+  footer section input{
+    width: 400px;
+  }
+  footer section textarea{
+    width: 400px;
+  }
 }
