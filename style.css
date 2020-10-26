@@ -35,10 +35,9 @@ hr {
   justify-content: space-between;
   background-color: rgb(37, 37, 37);
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0;
-  right: 0;
-  left: 0;
+  
 
 }
 .nav-bar .logo {
@@ -192,6 +191,10 @@ hr {
   background-color: rgb(121, 40, 40);
   
 }
+.skills {
+  width: 95vw;
+  margin: 3rem auto 10rem;
+}
 .skills h1 {
   margin-bottom: 3rem;
 }
@@ -200,7 +203,7 @@ hr {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 .skills ul li {
   list-style: none;
@@ -296,24 +299,22 @@ footer {
   background-color: rgb(37, 37, 37);
   display: flex;
   flex-direction: column;
-  padding: 1.5rem;
+  align-items: center;
   color: white;
   margin: 0 auto;
 }
 
 footer h1 {
-  margin-bottom: 40px;
+  margin: 40px auto;
   letter-spacing: 2px;
   text-align: center;
 }
 footer section {
   display: flex;
-  flex-direction: column;
-}
-footer section{
-  display: flex;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
+  width: 95vw;
 }
 footer section form {
   display: flex;
@@ -322,14 +323,14 @@ footer section form {
 }
 footer section input {
   border: none;
-  width: 300px;
-  height: 30px;
+  width: 100px;
+  height: 40px;
   padding: 10px;
   margin-bottom: 20px;
   font-size: 1.5rem;
 }
 footer section textarea {
-  width: 300px;
+  width: 200px;
   height: 200px;
   padding: 10px;
   font-size: 1.5rem;
@@ -337,7 +338,6 @@ footer section textarea {
 }
 footer section button {
   letter-spacing: 2px;
-  width: 6rem;
   height: 2.5rem;
   border: none;
   background-color: #636B46;
@@ -418,7 +418,11 @@ footer p {
   }
   .skills ul {
     width: 800px;
-    margin: 3rem auto;
+    height: 300px;
+    margin: 0 auto;
+  }
+  .skills li {
+    height: 40px;
   }
   .projects {
     display: flex;
@@ -459,17 +463,33 @@ footer p {
   #hamburger-menu{
     display: flex;
   }
-  #skills ul{
+  .skills {
+    display: flex;
+    height: 650px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .skills ul{
+    margin: 0 auto;
     width: 90vw;
-    height: 500px;
+    height: 400px;
   }
   footer{
-    width: 90vw;
+    width: 100vw;
+  }
+  footer section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95vw;
+    margin: 0 auto;
   }
   footer section input{
-    width: 400px;
+    height: 40px;
+    width: 300px;
+    padding: 5px;
   }
   footer section textarea{
-    width: 400px;
+    width: 300px;
   }
 }
