@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <title>El Moctar Ebnou</title>
+    
   </head>
   <body>
     <header>
@@ -23,9 +24,27 @@
             <a href="https://docs.google.com/document/d/1eGsp-XXye6u6_D-J6l0jbHlbU_Tcz_qSrHDXR5TgILI/edit?usp=sharing">RESUME</a>
           </li>
         </ol>
+        <div id="hamburger-menu">
+          <span id="top"></span>
+          <span id="middle"></span>
+          <span id="bottom"></span>
+        </div>
       </nav>
     </header>
     <main>
+      <div id='drop-nav-div' class="hide">
+        <ol id='drop-nav'>
+          <li>
+            <a href="#skills">SKILLS</a>
+          </li>
+          <li>
+            <a href="#projects">WORK</a>
+          </li>
+          <li>
+            <a href="https://docs.google.com/document/d/1eGsp-XXye6u6_D-J6l0jbHlbU_Tcz_qSrHDXR5TgILI/edit?usp=sharing">RESUME</a>
+          </li>
+        </ol>
+      </div>
       <div class="intro">
         <img src="profile-pic.png" alt="El Moctar Ebnou" />
         <div class="intro-detail">
@@ -39,12 +58,15 @@
         <h1>SKILLS</h1>
         <ul>
           <li>JavaScript</li>
+          <li>TypeScript</li>
           <li>Node.js</li>
           <li>React</li>
           <li>Redux</li>
           <li>jQuery</li>
           <li>Express</li>
           <li>WebSocket</li>
+          <li>C#</li>
+          <li>.NET</li>
           <li>PostgreSQL</li>
           <li>Git</li>
           <li>HTML5</li>
@@ -52,9 +74,10 @@
           <li>Mocha</li>
           <li>Chai</li>
           <li>Supertest</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
           <li>Heroku</li>
         </ul>
-
       </div>
       <hr/>
       <h1>SOME OF MY WORK</h1>
@@ -104,7 +127,7 @@
           </a>
           <div class="card-detail">
             <h2>Bookmarks App</h2>
-            <h3>TECH STACK: HTML, CSS, Jquery, Express and PostgreSQL.</h3>
+            <h3>TECH STACK: HTML, CSS, jQuery, Express and PostgreSQL.</h3>
             <p>Desc: Full-stack bookmarks application.
             </p>
           </div>
@@ -154,5 +177,7 @@
       </div>
       <p>Copyright &copy; 2020. All rights reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
