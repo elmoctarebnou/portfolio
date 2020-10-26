@@ -126,6 +126,7 @@ hr {
 #drop-nav li{
   margin: 1rem;
   font-size: 2rem;
+  transition-duration: 100ms;
 }
 #drop-nav li a {
   color: white;
