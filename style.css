@@ -37,7 +37,7 @@ hr {
   position: fixed;
   width: 100vw;
   top: 0;
-  
+  padding: 0;
 
 }
 .nav-bar .logo {
@@ -54,6 +54,7 @@ hr {
 }
 .nav-bar ol {
   display: none;
+
 }
 .nav-bar li {
   list-style: none;
@@ -79,11 +80,11 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   justify-content: space-evenly;
   transition-duration: 300ms ;
-  padding: 15px;
+  padding: 5px 20px;
   position: relative;
 }
 #hamburger-menu:hover{
@@ -91,7 +92,7 @@ hr {
   cursor: pointer
 }
 #hamburger-menu span{
-  width: 60px;
+  width: 50px;
   height: 5px;
   background-color: white;
   transition-duration: 200ms;
@@ -117,7 +118,7 @@ hr {
   width: 100vw;
   height: 90vh;
   position: fixed;
-  top: 88px;
+  top: 70px;
   z-index: 50;
   background-color: rgb(37, 37, 37);
   padding-top: 5rem;
@@ -303,6 +304,7 @@ footer {
   align-items: center;
   color: white;
   margin: 0 auto;
+  padding: 1rem 0;
 }
 
 footer h1 {
@@ -387,17 +389,17 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100px;
+    height: 90px;
   }
   .nav-bar .logo {
-    padding: 1rem;
-    margin-left: 1.5rem;
+    padding: .2rem;
+    margin-left: 1 rem;
   }
   .nav-bar ol {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 1rem;
+    padding: .5rem;
   }
   .nav-bar ol li a {
     margin: 0 auto;
@@ -408,6 +410,7 @@ footer p {
   #hamburger-menu{
     display: none;
   }
+
   .intro {
     height: 550px;
     margin-top: 10rem;
@@ -458,15 +461,21 @@ footer p {
 
 }
 @media all and (max-width: 800px) {
+  .nav-bar{
+    height: 80px;
+  }
   .nav-bar ol {
     display: none;
   }
   #hamburger-menu{
     display: flex;
   }
+  #drop-nav{ 
+    top: 80px;
+  }
   .skills {
     display: flex;
-    height: 650px;
+    height: 600px;
     flex-direction: column;
     align-items: center;
   }
@@ -488,7 +497,7 @@ footer p {
   footer section input{
     height: 40px;
     width: 300px;
-    padding: 5px;
+    padding: 10px;
   }
   footer section textarea{
     width: 300px;
