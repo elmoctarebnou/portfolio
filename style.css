@@ -151,6 +151,8 @@ hr {
   height: 230px;
   width: 220px;
   border-radius: 50%;
+  background-color: rgb(37, 37, 37);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 .about{
   display: flex;
@@ -189,7 +191,7 @@ hr {
   font-size: 1.5rem;
   color: white;
   background-color: rgb(37, 37, 37);
-  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
   border-radius: 5px;
   transition-duration: 500ms;
 }
@@ -199,44 +201,12 @@ hr {
 .skills ul li span{
   margin: auto;
 }
-.learning {
-  height: 250px;
-  margin-top: 3rem;
-}
-
-.learning ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.learning ul li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-  padding: 5px 10px;
-  margin: 0.3rem;
-  height: 40px;
-  font-size: 1.5rem;
-  color: white;
-  background-color: rgb(37, 37, 37);
-  box-shadow: 5px 5px 5px rgb(0, 0, 0);
-  border-radius: 5px;
-  transition-duration: 500ms;
-}
-.learning ul li:hover{
-  transform: scale(1.1);
-}
-.learning ul li span{
-  margin: auto;
-}
 .projects {
   margin: 3rem auto;
   display: flex;
   flex-direction: column;
   align-items: center ;
-  max-width: 1200px;
+  max-width: 1500px;
 }
 .card {
   display: flex;
@@ -247,7 +217,8 @@ hr {
   padding: 0 0 1rem;
   width: 300px;
   height: 450px;
-  box-shadow: 5px 5px 5px rgb(0, 0, 0);
+  background-color: rgb(235, 235, 235);
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
   border-radius: 15px;
   transition-duration: 500ms;
 }
@@ -280,6 +251,7 @@ hr {
 }
 .card-detail h3 {
   margin-bottom: .5rem;
+  color: rgb(121, 40, 40);
 }
 
 .card-detail span {
@@ -459,25 +431,11 @@ footer p {
     height: 350px;
   }
   .skills ul {
-    width: 550px;
-    height: 250px;
+    width: 800px;
+    height: 200px;
     margin: 0 auto;
   }
   .skills ul li {
-    font-size: 2rem;
-  }
-  .learning {
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-  }
-  .learning ul {
-    width: 500px;
-    height: 250px;
-  }
-  .learning ul li {
     font-size: 2rem;
   }
   .projects {
@@ -530,14 +488,12 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 500px;
   }
   .skills ul{
     margin: 0 auto;
     width: 95vw;
-    height: 300px;
-  }
-  .learning ul {
-    height: 150px;
+    height: 400px;
   }
   footer{
     width: 100vw;
