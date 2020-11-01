@@ -152,7 +152,7 @@ hr {
   width: 220px;
   border-radius: 50%;
   background-color: rgb(37, 37, 37);
-  box-shadow: 2px 2px 50px rgb(0, 0, 0);
+  box-shadow: 1px 1px 50px rgb(0, 0, 0);
 }
 .about{
   display: flex;
