@@ -35,16 +35,21 @@ a{
   width: 100vw;
   height: 60px;
   top: 0;
-  padding: 0;
-
+  padding: auto 2px;
 }
-.nav-bar .logo {
+.nav-bar .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-bar .logo a{
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-decoration: none;
-  margin-left: .6rem;
+  margin-left: .5rem;
+  padding: auto;
   font-size: 3rem;
-  letter-spacing: 5px; 
+  letter-spacing: 5px;
   color: #ae4c4a;
   text-shadow: 2px 2px 5px black;
 }
@@ -165,7 +170,6 @@ a{
   font-size: 1.4rem;
   line-height: 30px;
   letter-spacing: 1px;
-  margin-top: 20px;
   box-shadow: 1px 3px 5px black;
   background-color: #556B7A;
   color: white;
@@ -368,12 +372,24 @@ footer section button {
 footer section button:hover {
   transform: scale(.95);
 }
+footer .contact {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  margin-bottom: 2rem;
+}
 footer h2 {
   font-size: .9rem;
   text-align: center;
   letter-spacing: 3px;
   margin-top: 3rem;
+  margin-bottom: 0;
   text-shadow: 1px 1px 5px black;
+}
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 footer ul li {
   list-style: none;
@@ -403,12 +419,10 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 90px;
+    height: 60px;
   }
-  .nav-bar .logo {
-    font-size: 4rem;
-    padding: .2rem;
-    margin-left: 1 rem;
+  .nav-bar .logo a{
+    font-size: 3rem;
   }
   .nav-bar ol {
     display: flex;
@@ -425,7 +439,7 @@ footer p {
     display: none;
   }
   .drop-nav{
-    top: 90px;
+    top: 60px;
   }
   .drop-nav li {
     margin: 2rem;
@@ -437,17 +451,17 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    max-width: 1000px;
-    height: 400px;
-    margin: 150px auto 100px;
+    max-width: 900px;
+    height: 300px;
+    margin: 100px auto 80px;
   }
   .intro img {
-    height: 350px;
-    width: 330px;;
+    height: 320px;
+    width: 300px;;
     margin:0;
   }
   .about p{
-    padding: 30px;
+    padding: 10px;
     width: 550px;
     font-size: 1.5rem;
     line-height: 35px;
@@ -456,7 +470,7 @@ footer p {
     font-size: 2rem;
   }
   .skills {
-    height: 350px;
+    height: 300px;
   }
   .skills ul {
     width: 800px;
@@ -493,8 +507,11 @@ footer p {
     width: 500px;
     height: 200px;
   }
+  footer .contact{
+    margin-bottom: 1rem;
+  }
   footer h2 {
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 
 }
@@ -512,7 +529,7 @@ footer p {
   }
   .intro{
     flex-direction: column;
-    height: 650px;
+    height: 520px;
   }
   .about{
     width: 95vw;
