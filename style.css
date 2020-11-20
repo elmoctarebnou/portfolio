@@ -50,13 +50,12 @@ a{
 }
 .nav-bar ol {
   display: none;
-
 }
 .nav-bar li {
   list-style: none;
   text-align: center;
   margin: .6rem;
-  transition-duration: 100ms;
+  transition: 100ms;
 }
 .nav-bar a {
   text-decoration: none;
@@ -66,7 +65,7 @@ a{
   text-shadow: 2px 2px 5px black;
 }
 .nav-bar li:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 .nav-bar li a:hover{
   color: #ae4c4a;
@@ -125,10 +124,10 @@ a{
 .drop-nav li{
   margin: 1rem;
   font-size: 2rem;
-  transition: 200ms;
+  transition: 100ms;
 }
 .drop-nav li:hover {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 .drop-nav li a {
   color: white;
@@ -222,7 +221,7 @@ a{
   background-color: white;
   box-shadow: 1px 1px 20px black;
   border-radius: 15px;
-  transition-duration: 500ms;
+  transition-duration: 100ms;
 }
 .card:hover {
   transform: scale(1.03);
@@ -322,6 +321,7 @@ footer h1 {
   margin: 0 auto 2rem;
   letter-spacing: 2px;
   text-align: center;
+  text-shadow: 1px 1px 5px black;
 }
 footer section {
   display: flex;
@@ -342,6 +342,7 @@ footer section input {
   padding: 10px;
   margin-bottom: 20px;
   font-size: 1.5rem;
+  box-shadow: 1px 1px 5px black;
 }
 footer section textarea {
   width: 200px;
@@ -349,6 +350,7 @@ footer section textarea {
   padding: 10px;
   font-size: 1.5rem;
   margin-bottom: 20px;
+  box-shadow: 1px 1px 5px black;
 }
 footer section button {
   letter-spacing: 2px;
@@ -371,6 +373,7 @@ footer h2 {
   text-align: center;
   letter-spacing: 3px;
   margin-top: 3rem;
+  text-shadow: 1px 1px 5px black;
 }
 footer ul li {
   list-style: none;
@@ -381,7 +384,7 @@ footer ul li {
 footer ul li a {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-shadow: 1px 1px 5px black;
 }
 footer ul li a:hover {
@@ -389,7 +392,8 @@ footer ul li a:hover {
 }
 footer p {
   margin: auto;
-  color: black;
+  color: white;
+  text-shadow: 1px 1px 5px black;
 }
 @media all and (min-device-width: 800px) {
   body {
