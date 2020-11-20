@@ -107,27 +107,30 @@ a{
 .hide{
   display: none;
 }
-#drop-nav{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.drop-nav{
   width: 100vw;
   height: 100vh;
   padding-top: 3rem;
   position: fixed;
   top: 59px;
+  right: -800px;
   z-index: 50;
   background-color: #556B7A;
+  transition: .5s ease;
 }
-#drop-nav li{
+.active{
+  display: flex;
+  right: 0px;
+}
+.drop-nav li{
   margin: 1rem;
   font-size: 2rem;
   transition: 200ms;
 }
-#drop-nav li:hover {
+.drop-nav li:hover {
   transform: scale(1.2);
 }
-#drop-nav li a {
+.drop-nav li a {
   color: white;
   text-shadow: 2px 2px 5px black;
 }
@@ -144,7 +147,7 @@ a{
   height: 230px;
   width: 220px;
   border-radius: 50%;
-  box-shadow: 0 10px 10px black;
+  box-shadow: 0 5px 5px black;
 }
 .about{
   display: flex;
@@ -189,7 +192,7 @@ a{
   height: 40px;
   font-size: 1.5rem;
   color: white;
-  background-color: #ae4c4a;
+  background-color: #556B7A;
   box-shadow: 2px 2px 5px black;
   border-radius: 5px;
   transition-duration: 500ms;
@@ -267,7 +270,7 @@ a{
 #live{
   text-decoration: none;
   font-size: 1.5rem;
-  background-color: #ae4c4a;
+  background-color: #556B7A;
   color: white;
   border-radius: 10px;
   box-shadow: 2px 1px 2px black;
@@ -280,11 +283,12 @@ a{
 #live:hover{
   opacity: 0.95;
   transform: scale(.95);
+  background-color: #ae4c4a;
 }
 #project-github {
   text-decoration: none;
   font-size: 1.5rem;
-  background-color:#ae4c4a;
+  background-color:#556B7A;
   color: white;
   border-radius: 10px;
   box-shadow: 2px 1px 2px black;
@@ -297,6 +301,7 @@ a{
 #project-github:hover {
   opacity: 0.95;
   transform: scale(.95);
+  background-color: #ae4c4a;
 }
 .projects div p {
   display: flex;
@@ -359,7 +364,6 @@ footer section button {
   transition-duration: 100ms;
 }
 footer section button:hover {
-  opacity: 0.8;
   transform: scale(.95);
 }
 footer h2 {
@@ -416,13 +420,13 @@ footer p {
   #hamburger-menu{
     display: none;
   }
-  #drop-nav{
+  .drop-nav{
     top: 90px;
   }
-  #drop-nav li {
+  .drop-nav li {
     margin: 2rem;
   }
-  #drop-nav li a:hover{
+  .drop-nav li a:hover{
     color: #ae4c4a;
   }
   .intro {
@@ -497,12 +501,18 @@ footer p {
   #hamburger-menu{
     display: flex;
   }
+  .drop-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .intro{
     flex-direction: column;
     height: 650px;
   }
   .about{
     width: 95vw;
+    margin-top: 1rem;
   }
   .about p {
     padding: 10px;

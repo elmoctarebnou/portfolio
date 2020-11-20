@@ -5,14 +5,14 @@ const dropDownMenu = () => {
     const top = $('#top').toggleClass('rotateDown');
     const middle = $('#middle').toggleClass('hide');
     const bottom = $('#bottom').toggleClass('rotateUp');
-    const dropDownNav = $('#drop-nav-div').toggleClass('hide');
+    const dropDownNav = $('.drop-nav').toggleClass('active');
   });
-  $("#drop-nav").on('click', 'li', (event) => { 
+  $(".drop-nav").on('click', 'li', (event) => { 
     const current = event.currentTarget; 
     const top = $('#top').toggleClass('rotateDown');
     const middle = $('#middle').toggleClass('hide');
     const bottom = $('#bottom').toggleClass('rotateUp');
-    const dropDownNav = $("#drop-nav-div").toggleClass('hide');
+    const dropDownNav = $(".drop-nav").toggleClass('active');
   });
 };
 
