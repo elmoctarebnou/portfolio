@@ -368,6 +368,7 @@ footer section button {
   font-size: 1.3rem;
   width: 200px;
   transition-duration: 100ms;
+  margin-bottom: 2rem;
 }
 footer section button:hover {
   transform: scale(.95);
@@ -375,15 +376,14 @@ footer section button:hover {
 footer .contact {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 150px;
-  margin-bottom: 2rem;
 }
 footer h2 {
-  font-size: .9rem;
+  font-size: 1.5rem;
   text-align: center;
   letter-spacing: 3px;
-  margin-top: 3rem;
-  margin-bottom: 0;
+  margin: 0;
   text-shadow: 1px 1px 5px black;
 }
 footer ul {
@@ -423,6 +423,7 @@ footer p {
   }
   .nav-bar .logo a{
     font-size: 3rem;
+    margin-left: 1rem;
   }
   .nav-bar ol {
     display: flex;
@@ -509,9 +510,10 @@ footer p {
   }
   footer .contact{
     margin-bottom: 1rem;
+    align-items: center;
   }
   footer h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 
 }
