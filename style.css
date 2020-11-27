@@ -481,6 +481,7 @@ footer p {
     flex-wrap: wrap;
     align-items: center;
     margin: 3rem auto;
+    width: 1200px;
   }
   .projects .card {
     width: 300px;
