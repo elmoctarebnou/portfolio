@@ -472,11 +472,10 @@ footer p {
     font-size: 2rem;
   }
   .skills {
-    height: 350px;
+    height: 360px;
   }
   .skills ul {
     width: 800px;
-    height: 250px;
     margin: 0 auto;
   }
   .skills ul li {
