@@ -290,6 +290,7 @@ a{
   opacity: 0.95;
   transform: scale(.95);
   background-color: #daad86;
+  color: black;
 }
 #project-github {
   text-decoration: none;
@@ -308,6 +309,7 @@ a{
   opacity: 0.95;
   transform: scale(.95);
   background-color: #daad86;
+  color: black;
 }
 .projects div p {
   display: flex;
@@ -369,7 +371,7 @@ footer section button {
   box-shadow: 2px 1px 2px black;
   border-radius: 15px;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 1.3rem;
   width: 200px;
   transition-duration: 100ms;
@@ -377,6 +379,7 @@ footer section button {
 }
 footer section button:hover {
   transform: scale(.95);
+  cursor: pointer;
 }
 footer .contact {
   display: flex;
