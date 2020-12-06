@@ -56,10 +56,10 @@ a{
 }
 .nav-bar a {
   text-decoration: none;
-  letter-spacing: 1px;
+  letter-spacing: 2px;
   color: white;
   font-size: 1.1rem;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 1px 1px 5px black;
 }
 .nav-bar li:hover {
   transform: scale(1.5);
@@ -88,6 +88,7 @@ a{
   height: 4px;
   background-color: white;
   transition-duration: 200ms;
+  border-radius: 5px;
   box-shadow: 2px 2px 5px black;
 }
 .rotateUp{
@@ -128,14 +129,15 @@ a{
 }
 .drop-nav li a {
   color: white;
-  text-shadow: 2px 2px 5px black;
+  text-shadow: 1px 1px 5px black;
+  letter-spacing: 2px;
 }
 .drop-nav hr{
   width: 20px;
   height: 1px;
   border-radius: 5px;
   background-color: white;
-  box-shadow: 1px 1px 2px black;
+  box-shadow: 1px 1px 3px black;
 }
 .intro {
   display: flex;
@@ -159,11 +161,12 @@ a{
   align-items: center;
   
 }
+/* #77fcf1 */
 .about .name {
   font-size: 2.5rem;
   font-weight: 400;
   color: #daad86;
-  text-shadow: 2px 1px 2px black;
+  text-shadow: 1px 1px 1px black;
 }
 .about p {
   font-size: 1.4rem;
@@ -268,6 +271,7 @@ a{
   flex-direction: row;
   justify-content: space-evenly;
   flex-wrap: nowrap;
+
 }
 #live{
   text-decoration: none;
@@ -278,9 +282,9 @@ a{
   box-shadow: 2px 1px 2px black;
   text-align: center;
   width: 80px;
-  padding: .5rem;
+  padding: .2rem;
   font-weight: 400;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
 }
 #live:hover{
   opacity: 0.95;
@@ -296,9 +300,9 @@ a{
   box-shadow: 2px 1px 2px black;
   text-align: center;
   width: 80px;
-  padding: .5rem;
+  padding: .2rem .5rem;
   font-weight: 400;
-  transition-duration: 100ms;
+  transition-duration: 200ms;
 }
 #project-github:hover {
   opacity: 0.95;
@@ -403,6 +407,7 @@ footer ul li a {
   color: white;
   font-size: 2rem;
   text-shadow: 1px 1px 5px black;
+  transition: 200ms;
 }
 footer ul li a:hover {
   color: #daad86;
