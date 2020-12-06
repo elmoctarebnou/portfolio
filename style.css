@@ -145,7 +145,6 @@ a{
   text-align: center;
   color: black;
   align-items: center;
-  height: 550px;
   margin-top: 5rem;
 }
 .intro img {
@@ -153,6 +152,7 @@ a{
   width: 220px;
   border-radius: 50%;
   box-shadow: 0 5px 5px black;
+  margin-bottom: 1rem;
 }
 .about{
   display: flex;
@@ -177,10 +177,6 @@ a{
   color: white;
   border-radius: 15px;
 }
-.skills {
-  height: 600px;
-}
-
 .skills ul {
   display: flex;
   flex-direction: row;
@@ -462,8 +458,7 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     max-width: 850px;
-    height: 300px;
-    margin: 100px auto 80px;
+    margin: 120px auto 60px;
   }
   .intro img {
     height: 260px;
@@ -479,11 +474,8 @@ footer p {
   h1{
     font-size: 2rem;
   }
-  .skills {
-    height: 360px;
-  }
   .skills ul {
-    width: 700px;
+    width: 900px;
     margin: 0 auto;
   }
   .skills ul li {
@@ -540,7 +532,10 @@ footer p {
   }
   .intro{
     flex-direction: column;
-    height: 520px;
+    margin: 100px auto 0;
+  }
+  .intro img{
+    margin-bottom: 1rem;
   }
   .about{
     width: 95vw;
@@ -553,12 +548,10 @@ footer p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 600px;
   }
   .skills ul{
     margin: 0 auto;
     width: 95vw;
-    height: 400px;
   }
   footer{
     width: 100vw;
