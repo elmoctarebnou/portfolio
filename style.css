@@ -65,7 +65,7 @@ a{
   transform: scale(1.5);
 }
 .nav-bar li a:hover{
-  color: #FF9900;
+  color: #7e8500;
 }
 #hamburger-menu{
   display: flex;
@@ -161,11 +161,10 @@ a{
   align-items: center;
   
 }
-/* #77fcf1 */
 .about .name {
   font-size: 2.5rem;
   font-weight: 400;
-  color: #FF9900;
+  color: #7e8500;
   text-shadow: 1px 1px 1px black;
 }
 .about p {
@@ -285,7 +284,7 @@ a{
 #live:hover{
   opacity: 0.95;
   transform: scale(.95);
-  background-color: #FF9900;
+  background-color: #7e8500;
   color: black;
 }
 #project-github {
@@ -304,7 +303,7 @@ a{
 #project-github:hover {
   opacity: 0.95;
   transform: scale(.95);
-  background-color:#FF9900;
+  background-color:#7e8500;
   color: black;
 }
 .projects div p {
@@ -363,7 +362,7 @@ footer section button {
   letter-spacing: 2px;
   height: 2.5rem;
   border: none;
-  background-color: #FF9900;
+  background-color: #7e8500;
   box-shadow: 2px 1px 2px black;
   border-radius: 15px;
   text-decoration: none;
@@ -408,7 +407,7 @@ footer ul li a {
   transition: 200ms;
 }
 footer ul li a:hover {
-  color: #FF9900;
+  color: #7e8500;
 }
 footer p {
   color: white;
@@ -450,7 +449,7 @@ footer p {
     margin: 2rem;
   }
   .drop-nav li a:hover{
-    color: #FF9900;
+    color: #7e8500;
   }
   .intro {
     display: flex;
