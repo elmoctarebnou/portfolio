@@ -52,7 +52,7 @@ a{
   list-style: none;
   text-align: center;
   margin: .6rem;
-  transition: 500ms;
+  transition: 300ms;
 }
 .nav-bar a {
   text-decoration: none;
@@ -120,7 +120,7 @@ a{
 .drop-nav li{
   margin: 1rem;
   font-size: 2rem;
-  transition: 500ms;
+  transition: 300ms;
 }
 .drop-nav li:hover {
   transform: scale(1.3);
