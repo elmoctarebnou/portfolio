@@ -85,7 +85,7 @@ a{
   background-color: white;
   transition-duration: 200ms;
   border-radius: 5px;
-  box-shadow: 1px 1px 5px black;
+  box-shadow: 0px 0px 3px black;
 }
 .rotateUp{
   transform: rotateZ(45deg);
@@ -142,7 +142,7 @@ a{
   height: 230px;
   width: 220px;
   border-radius: 50%;
-  border: 8px solid #556B7A;
+  border: 6px solid #556B7A;
   margin-bottom: 1rem;
   box-shadow: 0px 0px 5px black;
 }
@@ -183,7 +183,7 @@ a{
   font-size: 1.5rem;
   color: white;
   background-color: #556B7A;
-  box-shadow: 2px 2px 5px black;
+  box-shadow: 0px 0px 3px black;
   border-radius: 5px;
   transition-duration: 500ms;
 }
@@ -264,7 +264,7 @@ a{
   background-color: #556B7A;
   color: white;
   border-radius: 5px;
-  box-shadow: 2px 1px 2px black;
+  box-shadow: 0px 0px 3px black;
   text-align: center;
   width: 80px;
   padding: .2rem;
@@ -282,7 +282,7 @@ a{
   background-color:#556B7A;
   color: white;
   border-radius: 5px;
-  box-shadow: 2px 1px 2px black;
+  box-shadow: 0px 0px 3px black;
   text-align: center;
   width: 80px;
   padding: .2rem .5rem;
@@ -334,7 +334,7 @@ footer section input {
   padding: 10px;
   margin-bottom: 20px;
   font-size: 1.5rem;
-  box-shadow: 1px 1px 5px black;
+  box-shadow: 0px 0px 5px black;
   border-radius: 5px;
 }
 footer section textarea {
@@ -343,7 +343,7 @@ footer section textarea {
   padding: 10px;
   font-size: 1.5rem;
   margin-bottom: 20px;
-  box-shadow: 1px 1px 5px black;
+  box-shadow: 0px 0px 5px black;
   border-radius: 5px;
 }
 footer section button {
@@ -351,7 +351,7 @@ footer section button {
   height: 2.5rem;
   border: none;
   background-color: #00b4c8;
-  box-shadow: 2px 1px 2px black;
+  box-shadow: 0px 0px 5px black;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.3rem;
@@ -391,7 +391,7 @@ footer ul li a {
   text-decoration: none;
   color: white;
   font-size: 2rem;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 0px 0px 5px black;
   transition: 500ms;
 }
 footer ul li a:hover {
@@ -400,7 +400,7 @@ footer ul li a:hover {
 footer p {
   color: white;
   font-size: .8rem;
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 0px 0px 5px black;
 }
 @media all and (min-device-width: 800px) {
   body {
