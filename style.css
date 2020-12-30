@@ -33,7 +33,7 @@ a{
   background-color: #556B7A;
   position: fixed;
   width: 100vw;
-  height: 60px;
+  height: 55px;
   top: 0;
   padding: auto 2px;
 }
@@ -51,20 +51,17 @@ a{
 .nav-bar li {
   list-style: none;
   text-align: center;
-  margin: .6rem;
   transition: 300ms;
 }
 .nav-bar a {
   text-decoration: none;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   color: white;
-  text-shadow: 2px 2px 1px black;
+  transition: 300ms;
 }
-.nav-bar li:hover {
-  transform: scale(1.3);
-}
+
 .nav-bar li a:hover{
-  color: #00b4c8;
+  background-color: #00b4c8;
 }
 #hamburger-menu{
   display: flex;
@@ -108,7 +105,7 @@ a{
   height: 100vh;
   padding-top: 3rem;
   position: fixed;
-  top: 59px;
+  top: 54px;
   right: -800px;
   z-index: 50;
   background-color: #556B7A;
@@ -121,15 +118,17 @@ a{
 .drop-nav li{
   margin: 1rem;
   font-size: 2rem;
-  transition: 300ms;
 }
-.drop-nav li:hover {
-  transform: scale(1.3);
-}
+
 .drop-nav li a {
   color: white;
-  text-shadow: 1px 1px 2px black;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
+  border-radius: 10px;
+  padding: 1rem;
+  transition: 300ms;
+}
+.drop-nav li a:hover{
+  background-color: #00b4c8;
 }
 .intro {
   display: flex;
@@ -165,7 +164,7 @@ a{
   box-shadow: 0px 0px 10px black;
   background-color: #556B7A;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 .skills ul {
   display: flex;
@@ -211,8 +210,8 @@ a{
   width: 300px;
   height: 450px;
   background-color: white;
-  box-shadow: 0px 0px 10px black;
-  border-radius: 15px;
+  box-shadow: 0px 0px 8px black;
+  border-radius: 5px;
   transition-duration: 100ms;
 }
 .card:hover {
@@ -227,8 +226,8 @@ a{
 .card-top img {
   width: 100%;
   height: 200px;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .card-top h2 {
   margin: 0.5rem auto .5rem;
@@ -264,7 +263,7 @@ a{
   font-size: 1.5rem;
   background-color: #556B7A;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 2px 1px 2px black;
   text-align: center;
   width: 80px;
@@ -282,7 +281,7 @@ a{
   font-size: 1.5rem;
   background-color:#556B7A;
   color: white;
-  border-radius: 10px;
+  border-radius: 5px;
   box-shadow: 2px 1px 2px black;
   text-align: center;
   width: 80px;
@@ -336,7 +335,7 @@ footer section input {
   margin-bottom: 20px;
   font-size: 1.5rem;
   box-shadow: 1px 1px 5px black;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 footer section textarea {
   width: 200px;
@@ -345,7 +344,7 @@ footer section textarea {
   font-size: 1.5rem;
   margin-bottom: 20px;
   box-shadow: 1px 1px 5px black;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 footer section button {
   letter-spacing: 2px;
@@ -353,7 +352,7 @@ footer section button {
   border: none;
   background-color: #00b4c8;
   box-shadow: 2px 1px 2px black;
-  border-radius: 15px;
+  border-radius: 5px;
   text-decoration: none;
   font-size: 1.3rem;
   width: 200px;
@@ -421,24 +420,21 @@ footer p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: .5rem;
+    padding: .3rem 0;
   }
   .nav-bar ol li a {
     margin: 0 auto;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: .8rem;
+    font-size: 1.3rem;
   }
   #hamburger-menu{
     display: none;
   }
   .drop-nav{
-    top: 60px;
+    top: 55px;
   }
   .drop-nav li {
     margin: 2rem;
-  }
-  .drop-nav li a:hover{
-    color: #00b4c8;
   }
   .intro {
     display: flex;
