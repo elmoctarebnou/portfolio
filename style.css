@@ -161,7 +161,7 @@ a{
   font-size: 1.5rem;
   line-height: 30px;
   letter-spacing: 1px;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 10px black;
   background-color: #556B7A;
   color: white;
   border-radius: 10px;
@@ -210,12 +210,13 @@ a{
   width: 300px;
   height: 450px;
   background-color: white;
-  box-shadow: 1px 1px 20px black;
+  box-shadow: 0px 0px 10px black;
   border-radius: 15px;
   transition-duration: 100ms;
 }
 .card:hover {
   transform: scale(1.03);
+  box-shadow: 0px 0px 30px black;
 }
 .card-top{
   display: flex;
