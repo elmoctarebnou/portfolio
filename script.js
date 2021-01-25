@@ -15,5 +15,23 @@ const dropDownMenu = () => {
     const dropDownNav = $(".drop-nav").toggleClass('active');
   });
 };
+const text = `Hi there! I\'m EL, a software engineer and pro soccer player. I build full stack applications using JavaScript and other stuff. I strive to build great products with a focus on user experience, code design and security.`;
+let count = 0;
+let letter = '';
+let innerText = '';
+
+(function type () {
+  const inter = setTimeout(type, 25);
+  if(count === text.length){
+    count = 0;
+    clearTimeout(inter);
+  }
+  letter = text[count];
+  document.getElementById('txt-type').innerText = innerText;
+  innerText += letter;
+  count++;
+  
+})();
+
 
 $(dropDownMenu);

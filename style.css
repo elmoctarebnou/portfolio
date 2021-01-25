@@ -30,7 +30,7 @@ a{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #556B7A;
+  background-color: #293241;
   position: fixed;
   width: 100vw;
   height: 55px;
@@ -56,6 +56,7 @@ a{
 .nav-bar a {
   text-decoration: none;
   letter-spacing: 2px;
+  font-weight: bold;
   color: white;
   transition: 300ms;
 }
@@ -108,7 +109,7 @@ a{
   top: 54px;
   right: -800px;
   z-index: 50;
-  background-color: #556B7A;
+  background-color:#293241;
   transition: .5s ease;
 }
 .active{
@@ -126,6 +127,7 @@ a{
   border-radius: 10px;
   padding: 1rem;
   transition: 300ms;
+  text-shadow: 1px 2px 1px black;
 }
 .drop-nav li a:hover{
   background-color: #00b4c8;
@@ -142,7 +144,7 @@ a{
   height: 230px;
   width: 220px;
   border-radius: 50%;
-  border: 6px solid #556B7A;
+  border: 6px solid#293241;
   margin-bottom: 1rem;
   box-shadow: 0px 0px 5px black;
 }
@@ -153,18 +155,33 @@ a{
   align-items: center;
   letter-spacing: 2px;
 }
-.about .name {
-  font-size: 2rem;
-  text-shadow: 1px 1px 1px black;
-}
+
 .about p {
   font-size: 1.5rem;
   line-height: 30px;
   letter-spacing: 1px;
   box-shadow: 0px 0px 10px black;
-  background-color: #556B7A;
+  background-color:#293241;
   color: white;
-  border-radius: 5px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.about p::after{
+  content: '';
+  position: absolute;
+  width: 8px;
+  height: 1.8rem;
+  border-right: .5rem solid #00b4c8;
+  animation: cursor 1s infinite ease;
+}
+@keyframes cursor{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
 }
 .skills ul {
   display: flex;
@@ -182,7 +199,7 @@ a{
   height: 40px;
   font-size: 1.5rem;
   color: white;
-  background-color: #556B7A;
+  background-color:#293241;
   box-shadow: 0px 0px 3px black;
   border-radius: 5px;
   transition-duration: 500ms;
@@ -261,7 +278,7 @@ a{
 #live{
   text-decoration: none;
   font-size: 1.5rem;
-  background-color: #556B7A;
+  background-color:#293241;
   color: white;
   border-radius: 5px;
   box-shadow: 0px 0px 3px black;
@@ -279,7 +296,7 @@ a{
 #project-github {
   text-decoration: none;
   font-size: 1.5rem;
-  background-color:#556B7A;
+  background-color:  #293241;
   color: white;
   border-radius: 5px;
   box-shadow: 0px 0px 3px black;
@@ -300,7 +317,7 @@ a{
 }
 
 footer {
-  background-color: #556B7A;
+  background-color:#293241;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -526,6 +543,8 @@ footer p {
   }
   .about p {
     padding: 10px 5px;
+    min-width: 95vw;
+    min-height: 5vh;
   }
   .skills {
     display: flex;
