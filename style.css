@@ -473,6 +473,7 @@ footer p {
     width: 550px;
     font-size: 1.5rem;
     line-height: 2rem;
+    min-height: 10rem;
   }
   h1{
     font-size: 2rem;
@@ -544,7 +545,7 @@ footer p {
   .about p {
     padding: 15px 5px;
     min-width: 90vw;
-    min-height: 5vh;
+    min-height: 16rem;
   }
   .skills {
     display: flex;
