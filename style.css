@@ -4,7 +4,7 @@
 }
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: white;
+  background-image: linear-gradient(to top, #ffffff, #dedde2, #bebdc5, #9e9da9, #7f7f8e, #6f707f, #5f6171, #4f5263, #494c5d, #434756, #3e4150, #383c4a);
 }
 h1 , h2{
   font-size: 1.8rem;
@@ -12,6 +12,7 @@ h1 , h2{
   letter-spacing: 1px;
   margin: 3rem 0;
   font-weight: 400;
+  color: white;
 }
 h3{
   font-weight: 400;
@@ -30,19 +31,19 @@ a{
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  background-color: #222629;
   position: fixed;
   width: 100vw;
   height: 55px;
   top: 0;
   padding: auto 2px;
+  background-color: #383C4A;
 }
 
 .nav-bar .logo{
   text-decoration: none;
   font-size: 3rem;
   letter-spacing: 5px;
-  text-shadow: 2px 2px 1px black;
+  text-shadow: 2px 2px 1px #00b4c8;
   margin-left: .5rem;
 }
 .nav-bar ol {
@@ -58,11 +59,11 @@ a{
   letter-spacing: 2px;
   font-weight: bold;
   color: white;
-  transition: 300ms;
+  transition: 500ms;
 }
 
 .nav-bar li a:hover{
-  background-color: #00b4c8;
+  box-shadow: 0px 5px 2px -2px #00b4c8;
 }
 #hamburger-menu{
   display: flex;
@@ -86,7 +87,7 @@ a{
   background-color: white;
   transition-duration: 200ms;
   border-radius: 5px;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 3px #00b4c8;
 }
 .rotateUp{
   transform: rotateZ(45deg);
@@ -109,7 +110,7 @@ a{
   top: 54px;
   right: -800px;
   z-index: 50;
-  background-color:#222629;
+  background-color:#383C4A;
   transition: .5s ease;
 }
 .active{
@@ -124,45 +125,40 @@ a{
 .drop-nav li a {
   color: white;
   letter-spacing: 2px;
-  border-radius: 10px;
-  padding: 1rem;
   transition: 300ms;
-  text-shadow: 1px 2px 1px black;
 }
 .drop-nav li a:hover{
-  background-color: #00b4c8;
+  box-shadow: 0px 5px 2px -2px #00b4c8;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .intro {
   display: flex;
   flex-direction: column;
   text-align: center;
   color: black;
-  align-items: center;
-  margin-top: 5rem;
+  margin: 5rem auto 0;
+  width: 95vw;
 }
 .intro img {
   height: 230px;
   width: 220px;
   border-radius: 50%;
-  border: 6px solid#222629;
   margin-bottom: 1rem;
-  box-shadow: 0px 0px 5px black;
-}
-.about{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  letter-spacing: 2px;
+  box-shadow: 1px 1px 3px 3px #00b4c8;
+  border: 2px solid white;
 }
 
 .about p {
   font-size: 1.5rem;
-  line-height: 30px;
+  line-height: 2rem;
   letter-spacing: 1px;
-  box-shadow: 0px 0px 10px black;
-  background-color:#222629;
+  box-shadow: 1px 1px 5px 1px #00b4c8;
   color: white;
+  border: 1px solid white;
   border-radius: 10px;
   position: relative;
 }
@@ -199,10 +195,11 @@ a{
   height: 40px;
   font-size: 1.5rem;
   color: white;
-  background-color:#222629;
-  box-shadow: 0px 0px 3px black;
+  background-color: #57596B;
+  box-shadow: 1px 1px 3px #00b4c8;
   border-radius: 5px;
   transition-duration: 500ms;
+  border: 1px solid white;
 }
 .skills ul li:hover{
   transform: scale(1.1);
@@ -227,13 +224,14 @@ a{
   width: 300px;
   height: 450px;
   background-color: white;
-  box-shadow: 0px 0px 8px black;
+  border: 2px solid white;
+  box-shadow: 0px 0px 8px #00b4c8;
   border-radius: 5px;
   transition-duration: 100ms;
 }
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0px 0px 30px black;
+  box-shadow: 0px 0px 30px #00b4c8;
 }
 .card-top{
   display: flex;
@@ -249,13 +247,13 @@ a{
 .card-top h2 {
   margin: 0.5rem auto .5rem;
   text-align: center;
-  color: black;
+  color: #383C4A;
 }
 .card-detail {
   display: flex;
   flex-direction: column;
   width: 90%;
-  color: black;
+  color: #383C4A;
 }
 .card-detail h2 a{
   color: white;
@@ -278,10 +276,10 @@ a{
 #live{
   text-decoration: none;
   font-size: 1.5rem;
-  background-color:#222629;
+  background-color:#383C4A;
   color: white;
   border-radius: 5px;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 3px #00b4c8;
   text-align: center;
   width: 80px;
   padding: .2rem;
@@ -296,10 +294,10 @@ a{
 #project-github {
   text-decoration: none;
   font-size: 1.5rem;
-  background-color:  #222629;
+  background-color:  #383C4A;
   color: white;
   border-radius: 5px;
-  box-shadow: 0px 0px 3px black;
+  box-shadow: 0px 0px 3px #00b4c8;
   text-align: center;
   width: 80px;
   padding: .2rem .5rem;
@@ -317,7 +315,6 @@ a{
 }
 
 footer {
-  background-color:#222629;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -330,7 +327,6 @@ footer h1 {
   margin: 0 auto 2rem;
   letter-spacing: 2px;
   text-align: center;
-  text-shadow: 1px 1px 5px black;
 }
 footer section {
   display: flex;
@@ -351,8 +347,9 @@ footer section input {
   padding: 10px;
   margin-bottom: 20px;
   font-size: 1.5rem;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 5px #00b4c8;
   border-radius: 5px;
+  
 }
 footer section textarea {
   width: 200px;
@@ -360,15 +357,16 @@ footer section textarea {
   padding: 10px;
   font-size: 1.5rem;
   margin-bottom: 20px;
-  box-shadow: 0px 0px 5px black;
+  box-shadow: 0px 0px 5px #00b4c8;
   border-radius: 5px;
 }
 footer section button {
   letter-spacing: 2px;
   height: 2.5rem;
   border: none;
-  background-color: #00b4c8;
-  box-shadow: 0px 0px 5px black;
+  color: white;
+  background-color: #383C4A;
+  box-shadow: 0px 0px 5px #00b4c8;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.3rem;
@@ -378,6 +376,7 @@ footer section button {
 }
 footer section button:hover {
   transform: scale(.95);
+  background-color: #00b4c8;
   cursor: pointer;
 }
 footer .contact {
@@ -391,7 +390,7 @@ footer h2 {
   text-align: center;
   letter-spacing: 3px;
   margin: 0;
-  text-shadow: 1px 1px 5px black;
+  color: #383C4A;
 }
 footer ul {
   display: flex;
@@ -406,18 +405,17 @@ footer ul li {
 
 footer ul li a {
   text-decoration: none;
-  color: white;
+  color: #383C4A;
   font-size: 2rem;
-  text-shadow: 0px 0px 5px black;
+  text-shadow: 0px 0px .5px #00b4c8;
   transition: 500ms;
 }
 footer ul li a:hover {
   color: #00b4c8;
 }
 footer p {
-  color: white;
+  color: #383C4A;
   font-size: .8rem;
-  text-shadow: 0px 0px 5px black;
 }
 @media all and (min-device-width: 800px) {
   body {
@@ -437,11 +435,13 @@ footer p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: .3rem 0;
+    padding: .3rem;
+  }
+  .nav-bar ol li{
+    padding: .3rem 1rem;
   }
   .nav-bar ol li a {
     margin: 0 auto;
-    padding: .8rem;
     font-size: 1.3rem;
   }
   #hamburger-menu{
@@ -457,6 +457,7 @@ footer p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     max-width: 850px;
     margin: 120px auto 60px;
   }
@@ -465,11 +466,12 @@ footer p {
     width: 240px;;
     margin:0;
   }
+  
   .about p{
     padding: 10px;
     width: 550px;
     font-size: 1.5rem;
-    line-height: 35px;
+    line-height: 2rem;
   }
   h1{
     font-size: 2rem;
@@ -532,18 +534,15 @@ footer p {
   }
   .intro{
     flex-direction: column;
-    margin: 100px auto 0;
+    align-items: center;
   }
   .intro img{
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
   }
-  .about{
-    width: 95vw;
-    margin-top: 1rem;
-  }
+  
   .about p {
-    padding: 10px 5px;
-    min-width: 95vw;
+    padding: 15px 5px;
+    min-width: 90vw;
     min-height: 5vh;
   }
   .skills {
