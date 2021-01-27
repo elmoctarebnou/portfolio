@@ -125,6 +125,7 @@ a{
 .drop-nav li a {
   color: white;
   letter-spacing: 2px;
+  text-shadow: 1px 1px 1px #00b4c8;
   transition: 300ms;
 }
 .drop-nav li a:hover{
