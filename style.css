@@ -4,13 +4,14 @@
 }
 body {
   font-family: 'Nunito', sans-serif;
-  background-image: linear-gradient(to top, #ffffff, #dedde2, #bebdc5, #9e9da9, #7f7f8e, #6f707f, #5f6171, #4f5263, #494c5d, #434756, #3e4150, #383c4a);
+  background-color: #383C4A;
 }
 h1 , h2{
+  display: inline-block;
   font-size: 1.8rem;
   text-align: center;
   letter-spacing: 1px;
-  margin: 3rem 0;
+  margin: 3rem auto;
   font-weight: 400;
   color: white;
 }
@@ -26,6 +27,7 @@ li {
 a{
   text-decoration: none;
 }
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -38,12 +40,11 @@ a{
   padding: auto 2px;
   background-color: #383C4A;
 }
-
 .nav-bar .logo{
   text-decoration: none;
   font-size: 3rem;
   letter-spacing: 5px;
-  text-shadow: 2px 2px 1px #00b4c8;
+  text-shadow: 2px 2px 0px #00b4c8;
   margin-left: .5rem;
 }
 .nav-bar ol {
@@ -52,18 +53,18 @@ a{
 .nav-bar li {
   list-style: none;
   text-align: center;
-  transition: 300ms;
 }
 .nav-bar a {
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: bold;
   color: white;
-  transition: 500ms;
+  transition: 200ms;
 }
 
-.nav-bar li a:hover{
-  box-shadow: 0px 5px 2px -2px #00b4c8;
+.nav-bar a:hover{
+  font-size: 1.5rem;
+  box-shadow: 1px 5px 5px -5px #00b4c8;
 }
 #hamburger-menu{
   display: flex;
@@ -126,12 +127,13 @@ a{
   color: white;
   letter-spacing: 2px;
   text-shadow: 1px 1px 1px #00b4c8;
-  transition: 300ms;
+  transition: 200ms;
 }
 .drop-nav li a:hover{
-  box-shadow: 0px 5px 2px -2px #00b4c8;
+  font-size: 2.5rem;
+  box-shadow: 0px 5px 5px -5px #00b4c8;
 }
-.main{
+main{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -142,26 +144,31 @@ a{
   text-align: center;
   color: black;
   margin: 5rem auto 0;
-  width: 95vw;
+  width: 90vw;
+  padding: 1rem;
+  border-radius: 10px;
+  
 }
 .intro img {
   height: 230px;
   width: 220px;
   border-radius: 50%;
-  margin-bottom: 1rem;
-  box-shadow: 1px 1px 3px 3px #00b4c8;
   border: 2px solid white;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 3px 1px #00b4c8;
 }
 
 .about p {
   font-size: 1.5rem;
   line-height: 2rem;
   letter-spacing: 1px;
-  box-shadow: 1px 1px 5px 1px #00b4c8;
+  text-align: center;
+  box-shadow: 1px 1px 3px 1px #00b4c8;
+  border: 2px solid white;
   color: white;
-  border: 1px solid white;
   border-radius: 10px;
   position: relative;
+  text-align: center;
 }
 
 .about p::after{
@@ -180,6 +187,28 @@ a{
     opacity: 1;
   }
 }
+@keyframes skill{
+  0%{
+    transform: rotate(0);
+  }
+  25%{
+    transform: rotate(-2deg);
+  }
+  50%{
+    transform: rotate(0);
+  }
+  75%{
+    transform: rotate(2deg);
+  }
+  100%{
+    transform: rotate(0);
+  }
+}
+.skills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .skills ul {
   display: flex;
   flex-direction: row;
@@ -196,23 +225,22 @@ a{
   height: 40px;
   font-size: 1.5rem;
   color: white;
-  background-color: #57596B;
+  border: 1px solid white;
   box-shadow: 1px 1px 3px #00b4c8;
   border-radius: 5px;
-  transition-duration: 500ms;
-  border: 1px solid white;
 }
 .skills ul li:hover{
-  transform: scale(1.1);
+  animation: skill .3s ease-in-out;
 }
 .skills ul li span{
   margin: auto;
 }
 .projects {
-  margin: 3rem auto;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center ;
+  justify-content: space-around;
   max-width: 1500px;
 }
 .card {
@@ -220,18 +248,18 @@ a{
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  margin: 1rem;
+  margin: 0 auto 1rem;
   padding: 0 0 1rem;
   width: 300px;
   height: 450px;
   background-color: white;
-  box-shadow: 0px 0px 8px #00b4c8;
+  box-shadow: 1px 1px 3px 1px #00b4c8;
   border-radius: 5px;
   transition-duration: 100ms;
 }
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0px 0px 30px #00b4c8;
+  box-shadow: 0px 0px 5px 3px #00b4c8;
 }
 .card-top{
   display: flex;
@@ -324,8 +352,8 @@ footer {
 }
 
 footer h1 {
-  margin: 0 auto 2rem;
-  color: #383C4A;
+  margin: 3rem auto;
+  color: white;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -365,20 +393,22 @@ footer section button {
   letter-spacing: 2px;
   height: 2.5rem;
   border: none;
-  color: white;
-  background-color: #383C4A;
+  color: #383c4a;
+  background-color: white;
   box-shadow: 0px 0px 5px #00b4c8;
   border-radius: 5px;
   text-decoration: none;
   font-size: 1.3rem;
   width: 200px;
-  transition-duration: 100ms;
+  transition: 100ms;
   margin-bottom: 2rem;
 }
 footer section button:hover {
   transform: scale(.95);
   background-color: #00b4c8;
+  color: white;
   cursor: pointer;
+  opacity: .95;
 }
 footer .contact {
   display: flex;
@@ -391,7 +421,7 @@ footer h2 {
   text-align: center;
   letter-spacing: 3px;
   margin: 0;
-  color: #383C4A;
+  color: white;
 }
 footer ul {
   display: flex;
@@ -406,7 +436,7 @@ footer ul li {
 
 footer ul li a {
   text-decoration: none;
-  color: #383C4A;
+  color: white;
   font-size: 2rem;
   text-shadow: 0px 0px .5px #00b4c8;
   transition: 500ms;
@@ -415,7 +445,7 @@ footer ul li a:hover {
   color: #00b4c8;
 }
 footer p {
-  color: #383C4A;
+  color: white;
   font-size: .8rem;
 }
 @media all and (min-device-width: 800px) {
@@ -460,7 +490,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     max-width: 850px;
-    margin: 120px auto 60px;
+    margin: 120px auto 0px;
   }
   .intro img {
     height: 260px;
@@ -469,11 +499,12 @@ footer p {
   }
   
   .about p{
-    padding: 10px;
     width: 550px;
     font-size: 1.5rem;
     line-height: 2rem;
     min-height: 10rem;
+    letter-spacing: 3px;
+    padding: 10px;
   }
   h1{
     font-size: 2rem;
@@ -490,13 +521,13 @@ footer p {
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    margin: 3rem auto;
+    margin: 0 auto;
     max-width: 1200px;
   }
   .projects .card {
     width: 300px;
     height: 460px;
-    margin: 1rem auto;
+    margin: 1rem;
   }
   .card-detail {
     padding: 0 .5rem;
@@ -504,6 +535,9 @@ footer p {
   }
   .projects span {
     margin: .5rem .3rem;
+  }
+  footer{
+    padding: 0;
   }
   footer section input{
     width: 500px;
@@ -537,6 +571,7 @@ footer p {
   .intro{
     flex-direction: column;
     align-items: center;
+    width: 85vw;
   }
   .intro img{
     margin-bottom: 1.5rem;
@@ -545,7 +580,8 @@ footer p {
   .about p {
     padding: 15px 5px;
     min-width: 90vw;
-    min-height: 16rem;
+    min-height: 12rem;
+    text-align: center;
   }
   .skills {
     display: flex;
