@@ -15,7 +15,7 @@ const dropDownMenu = () => {
     const dropDownNav = $(".drop-nav").toggleClass('active');
   });
 };
-const text = `Hi there! I\'m EL, a software engineer and pro soccer player. I build full stack applications using JavaScript and other stuff. I strive to build great products with a focus on user experience, code design and security.`;
+const text = `Hi, I\'m EL Moctar Ebnou.`;
 let count = 0;
 let letter = '';
 let innerText = '';

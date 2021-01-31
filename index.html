@@ -8,7 +8,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
+
     <title>El Moctar Ebnou</title>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XZ79JCG418"></script>
     <script>
@@ -60,11 +63,13 @@
       </div>
     </header>
     <main>
-      <div class="intro">
-        <img src="elmoctarebnou.png" alt="El Moctar Ebnou" />
-        <div class="about">
-          <p id="txt-type"></p>
-          
+      <div class="landing">
+        <div class="intro">
+          <img src="elmoctarebnou.png" alt="El Moctar Ebnou" />
+          <div class="about">
+            <p class='name' id="txt-type"></p>
+            <p class='job'>Software engineer and pro soccer player. I build full stack applications using JavaScript and other stuff. I strive to build great products with a focus on user experience, code design and security.</p>
+          </div>
         </div>
       </div>
       <div class="skills" id="skills">
@@ -91,68 +96,84 @@
           <li><span>Kubernetes</span></li>
         </ul>
       </div>
-      <h1>SOME OF MY WORK</h1>
       <div id="projects" class="projects">
-        <div class="card">
-          <div class="card-top">
-            <img src="squeaker.png" alt="" />
-            <h2>Squeaker</h2>
+        <h1>SOME OF MY WORK</h1>
+        <div class="list-projects">
+            <div class="card">
+              <div class="card-top">
+                <img src="squeaker.png" alt="" />
+                <h2>Squeaker</h2>
+              </div>
+              <div class="card-detail">
+                <h3><strong>Tech Stack: </strong>React, Node, Express, JWT & PostgreSQL</h3>
+                <p>Squeaker is a full stack social network and microblogging app.</p>
+              </div>
+              <div class="buttons">
+                <a id="project-github" href="https://github.com/elmoctarebnou/squeaker" target="_blank">GitHub</a>
+                <a id='live' href="https://squeaker.vercel.app" target="_blank">Live</a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <img src="Burnt-toast.png" alt="" />
+                <h2>Burnt Toast</h2>
+              </div>
+              <div class="card-detail">
+                <h3><strong>Tech Stack: </strong>React, Node, Express, JWT & PostgreSQL</h3>
+                <p>Burnt Toast is an app that helps users barter services with each other.
+                </p>
+              </div>
+              <div class="buttons">
+                <a
+                id="project-github"
+                href="https://github.com/thinkful-ei-quail/burnt-toast-api"
+                target="_blank"
+                >GitHub</a>
+                <a id="live" 
+                href="https://burnt-toast-app.vercel.app/"
+                target="_blank"
+                >Live
+              </a>
+            </div>
           </div>
-          <div class="card-detail">
-            <h3><strong>Tech Stack: </strong>React, Node, Express, JWT & PostgreSQL</h3>
-            <p>Squeaker is a full stack social network and microblogging app.</p>
+          <div class="card">
+            <div class="card-top">
+              <img src="SpeakEZ.png" alt="" />
+              <h2>SpeakEZ</h2>
+            </div>
+            <div class="card-detail">
+              <h3><strong>Tech Stack: </strong>React, Node, Express, JWT & PostgreSQL</h3>
+              <p>SpeakEZ is a language learning app with a space repetition algorithm.</p>
+            </div>
+            <div class="buttons">
+              <a id="project-github" href="https://github.com/elmoctarebnou/capstone2-Madison-El-Angela" target="_blank">GitHub</a>
+              <a id='live' href="https://speak-ez.vercel.app/" target="_blank">Live</a>
+            </div>
           </div>
-          <div class="buttons">
-            <a id="project-github" href="https://github.com/elmoctarebnou/squeaker" target="_blank">GitHub</a>
-            <a id='live' href="https://squeaker.vercel.app" target="_blank">Live</a>
+          <div class="card">
+            <div class="card-top">
+              <img src="preview.jpg" alt="" />
+              <h2>Chateme</h2>
+            </div>
+            <div class="card-detail">
+              <h3><strong>Tech Stack: </strong>React, Node, Express, WebSocket, JWT & PostgreSQL</h3>
+                <p>Chateme is a full stack chat application with instant messaging.</p>
+              </div>
+              <div class="buttons">
+                <a
+                  id="project-github"
+                  href="https://github.com/elmoctarebnou/chateme-app"
+                  target="_blank"
+                  >GitHub</a
+                >
+                <a id="live"
+                  href="https://elmoctarebnou.github.io/chateme-app/"
+                  target="_blank"
+                >Live</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-top">
-            <img src="Burnt-toast.png" alt="" />
-            <h2>Burnt Toast</h2>
-          </div>
-          <div class="card-detail">
-            <h3><strong>Tech Stack: </strong>React, Node, Express, JWT & PostgreSQL</h3>
-            <p>Burnt Toast is an app that helps users barter services with each other.
-            </p>
-          </div>
-          <div class="buttons">
-            <a
-              id="project-github"
-              href="https://github.com/thinkful-ei-quail/burnt-toast-api"
-              target="_blank"
-              >GitHub</a>
-            <a id="live" 
-            href="https://burnt-toast-app.vercel.app/"
-            target="_blank"
-            >Live
-            </a>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-top">
-            <img src="preview.jpg" alt="" />
-            <h2>Chateme</h2>
-          </div>
-          <div class="card-detail">
-            <h3><strong>Tech Stack: </strong>React, Node, Express, WebSocket, JWT & PostgreSQL</h3>
-            <p>Chateme is a full stack chat application with instant messaging.</p>
-          </div>
-          <div class="buttons">
-            <a
-              id="project-github"
-              href="https://github.com/elmoctarebnou/chateme-app"
-              target="_blank"
-              >GitHub</a
-            >
-            <a id="live"
-              href="https://elmoctarebnou.github.io/chateme-app/"
-              target="_blank"
-            >Live</a>
-          </div>
-        </div>
-      </div>
     </main>
     <footer id="footer">
       <section>

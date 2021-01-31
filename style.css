@@ -4,16 +4,14 @@
 }
 body {
   font-family: 'Nunito', sans-serif;
-  background-color: #383C4A;
 }
 h1 , h2{
   display: inline-block;
   font-size: 1.8rem;
   text-align: center;
   letter-spacing: 1px;
-  margin: 3rem auto;
+  margin: 0  auto 3rem;
   font-weight: 400;
-  color: white;
 }
 h3{
   font-weight: 400;
@@ -62,7 +60,7 @@ a{
   transition: 200ms;
 }
 
-.nav-bar a:hover{
+.nav-bar li a:hover{
   font-size: 1.5rem;
   box-shadow: 1px 5px 5px -5px #00b4c8;
 }
@@ -138,6 +136,11 @@ main{
   flex-direction: column;
   align-items: center;
 }
+.landing{
+  width: 100vw;
+  background-color: #383C4A;
+  padding-bottom: 3rem;
+}
 .intro {
   display: flex;
   flex-direction: column;
@@ -145,7 +148,6 @@ main{
   color: black;
   margin: 5rem auto 0;
   width: 90vw;
-  padding: 1rem;
   border-radius: 10px;
   
 }
@@ -153,31 +155,34 @@ main{
   height: 230px;
   width: 220px;
   border-radius: 50%;
-  border: 2px solid white;
   margin-bottom: 1rem;
   box-shadow: 1px 1px 3px 1px #00b4c8;
 }
 
-.about p {
-  font-size: 1.5rem;
-  line-height: 2rem;
+.about .name {
+  font-size: 2.4rem;
+  font-family: 'Raleway', sans-serif;
+  line-height: 2.5rem;
   letter-spacing: 1px;
   text-align: center;
-  box-shadow: 1px 1px 3px 1px #00b4c8;
-  border: 2px solid white;
-  color: white;
+  color: #00b4c8;
   border-radius: 10px;
   position: relative;
-  text-align: center;
 }
 
-.about p::after{
+.about .name::after{
   content: '';
   position: absolute;
   width: 8px;
-  height: 1.8rem;
+  height: 1.7rem;
+  margin-top: .6rem;
   border-right: .5rem solid #00b4c8;
-  animation: cursor 1s infinite ease;
+  animation: cursor .6s infinite ease;
+}
+.about .job{
+  color: white;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
 }
 @keyframes cursor{
   0%{
@@ -208,6 +213,7 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 3rem 0;
 }
 .skills ul {
   display: flex;
@@ -225,7 +231,7 @@ main{
   height: 40px;
   font-size: 1.5rem;
   color: white;
-  border: 1px solid white;
+  background-color: #383c4a;
   box-shadow: 1px 1px 3px #00b4c8;
   border-radius: 5px;
 }
@@ -275,13 +281,11 @@ main{
 .card-top h2 {
   margin: 0.5rem auto .5rem;
   text-align: center;
-  color: #383C4A;
 }
 .card-detail {
   display: flex;
   flex-direction: column;
   width: 90%;
-  color: #383C4A;
 }
 .card-detail h2 a{
   color: white;
@@ -349,6 +353,7 @@ footer {
   color: white;
   margin: 0 auto;
   padding: 1rem 0;
+  background-color: #383C4A;
 }
 
 footer h1 {
@@ -498,16 +503,26 @@ footer p {
     margin:0;
   }
   
-  .about p{
-    width: 550px;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    min-height: 10rem;
+  .about .name{
+    font-size: 2.5rem;
     letter-spacing: 3px;
     padding: 10px;
+    margin-bottom: 1rem;
+  }
+  .about .name::after{
+    height: 1.8rem;
+    margin-top: .4rem;
+    width: 9px;
+  }
+  .about .job{
+    font-size: 1.5rem;
+    line-height: 1.8rem;
   }
   h1{
     font-size: 2rem;
+  }
+  .skills{
+    width: 100vw;
   }
   .skills ul {
     width: 900px;
@@ -518,11 +533,19 @@ footer p {
   }
   .projects {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
     max-width: 1200px;
+  }
+  .list-projects{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
   }
   .projects .card {
     width: 300px;
@@ -571,22 +594,22 @@ footer p {
   .intro{
     flex-direction: column;
     align-items: center;
-    width: 85vw;
+    width: 90vw;
   }
   .intro img{
     margin-bottom: 1.5rem;
   }
   
-  .about p {
-    padding: 15px 5px;
-    min-width: 90vw;
-    min-height: 12rem;
+  .about .name{
     text-align: center;
+    line-height: 3rem;
+    margin-bottom: 1rem;
   }
   .skills {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
   }
   .skills ul{
     margin: 0 auto;
