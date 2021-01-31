@@ -489,13 +489,15 @@ footer p {
   .drop-nav li {
     margin: 2rem;
   }
+  .landing{
+    padding-bottom: 6rem;
+  }
   .intro {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     max-width: 850px;
-    margin: 120px auto 0px;
   }
   .intro img {
     height: 260px;
@@ -525,7 +527,8 @@ footer p {
     width: 100vw;
   }
   .skills ul {
-    width: 900px;
+    width: 90vw;
+    max-width: 950px;
     margin: 0 auto;
   }
   .skills ul li {
@@ -537,7 +540,7 @@ footer p {
     flex-wrap: wrap;
     align-items: center;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1600px;
   }
   .list-projects{
     display: flex;
