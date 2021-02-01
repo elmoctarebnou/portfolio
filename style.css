@@ -248,6 +248,7 @@ main{
   align-items: center ;
   justify-content: space-around;
   max-width: 1500px;
+  padding-bottom: 2rem;
 }
 .card {
   display: flex;
