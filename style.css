@@ -11,6 +11,7 @@ h1 , h2{
   text-align: center;
   letter-spacing: 1px;
   margin: 0  auto 3rem;
+  color: #00b4c8;
   box-shadow: 2px 10px 1px -8px #00b4c8;
 }
 h3{
