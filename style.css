@@ -11,7 +11,7 @@ h1 , h2{
   text-align: center;
   letter-spacing: 1px;
   margin: 0  auto 3rem;
-  font-weight: 400;
+  box-shadow: 2px 10px 1px -8px #00b4c8;
 }
 h3{
   font-weight: 400;
@@ -62,7 +62,7 @@ a{
 
 .nav-bar li a:hover{
   font-size: 1.5rem;
-  box-shadow: 1px 5px 5px -5px #00b4c8;
+  box-shadow: 2px 10px 1px -8px #00b4c8;
 }
 #hamburger-menu{
   display: flex;
@@ -156,7 +156,6 @@ main{
   width: 220px;
   border-radius: 50%;
   margin-bottom: 1rem;
-  box-shadow: 1px 1px 1px 2px #00b4c8;
 }
 
 .about .name {
@@ -282,6 +281,8 @@ main{
 .card-top h2 {
   margin: 0.5rem auto .5rem;
   text-align: center;
+  color: black;
+  box-shadow: none;
 }
 .card-detail {
   display: flex;
@@ -428,6 +429,7 @@ footer h2 {
   letter-spacing: 3px;
   margin: 0;
   color: white;
+  box-shadow: none;
 }
 footer ul {
   display: flex;
