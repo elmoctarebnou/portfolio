@@ -15,13 +15,13 @@ const dropDownMenu = () => {
     const dropDownNav = $(".drop-nav").toggleClass('active');
   });
 };
-const text = `Hi, I\'m EL Moctar Ebnou.`;
+const text = `Hi, I\'m EL Moctar Ebnou`;
 let count = 0;
 let letter = '';
 let innerText = '';
 
 (function type () {
-  const inter = setTimeout(type, 25);
+  const inter = setTimeout(type, 100);
   if(count === text.length){
     count = 0;
     clearTimeout(inter);

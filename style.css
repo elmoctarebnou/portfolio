@@ -130,7 +130,7 @@ a{
 }
 .drop-nav li a:hover{
   font-size: 2.5rem;
-  box-shadow: 0px 5px 5px -5px #00b4c8;
+  box-shadow: 2px 10px 1px -8px #00b4c8;
 }
 main{
   display: flex;
@@ -173,10 +173,10 @@ main{
 .about .name::after{
   content: '';
   position: absolute;
-  width: 8px;
-  height: 1.7rem;
-  margin-top: .6rem;
-  border-right: .5rem solid #00b4c8;
+  width: 5px;
+  height: .5rem;
+  margin-top: 2.4rem;
+  border-right: 1.7rem solid #00b4c8;
   animation: cursor .6s infinite ease;
 }
 .about .job{
@@ -260,13 +260,13 @@ main{
   width: 300px;
   height: 450px;
   background-color: white;
-  box-shadow: 1px 1px 3px 1px #00b4c8;
+  box-shadow: 1px 1px 3px #00b4c8;
   border-radius: 5px;
   transition-duration: 100ms;
 }
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 0px 0px 5px 3px #00b4c8;
+  box-shadow: 1px 1px 20px #00b4c8;
 }
 .card-top{
   display: flex;
@@ -516,9 +516,10 @@ footer p {
     margin-bottom: 1rem;
   }
   .about .name::after{
-    height: 1.8rem;
-    margin-top: .4rem;
-    width: 9px;
+    height: .5rem;
+    margin-top: 2.1rem;
+    width: 5px;
+    border-right: 1.5rem solid #00b4c8;
   }
   .about .job{
     font-size: 1.5rem;
