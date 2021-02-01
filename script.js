@@ -15,7 +15,7 @@ const dropDownMenu = () => {
     const dropDownNav = $(".drop-nav").toggleClass('active');
   });
 };
-const text = `Hi, I\'m EL Moctar Ebnou`;
+const text = `Hi, I\'m EL Moctar Ebnou.`;
 let count = 0;
 let letter = '';
 let innerText = '';
