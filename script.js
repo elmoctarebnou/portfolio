@@ -21,7 +21,7 @@ let letter = '';
 let innerText = '';
 
 (function type () {
-  const inter = setTimeout(type, 100);
+  const inter = setTimeout(type, 50);
   if(count === text.length){
     count = 0;
     clearTimeout(inter);
