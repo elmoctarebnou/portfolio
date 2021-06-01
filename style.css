@@ -15,7 +15,6 @@ h1 , h2{
   letter-spacing: 1px;
   margin: 0  auto 3rem;
   color: #00b4c8;
-  box-shadow: 2px 10px 1px -8px #00b4c8;
 }
 h3{
   font-weight: 400;
@@ -151,7 +150,8 @@ main{
   text-align: center;
   color: black;
   margin: 5rem auto 0;
-  width: 90vw;
+  width: 95vw;
+  min-height: 600px;
   border-radius: 10px;
   
 }
@@ -164,7 +164,8 @@ main{
 
 .about .name {
   font-size: 2.4rem;
-  font-family: 'Raleway', sans-serif;
+  font-family:  sans-serif;
+  font-weight: 300;
   line-height: 2.5rem;
   letter-spacing: 1px;
   text-align: center;
@@ -180,17 +181,17 @@ main{
   height: .5rem;
   margin-top: 2.4rem;
   border-right: 1.7rem solid #00b4c8;
-  animation: cursor .6s infinite ease;
+  animation: cursor 1s infinite ease-in-out;
 }
 .about .job{
   color: white;
   font-size: 1.5rem;
-  line-height: 1.8rem;
+  line-height: 1.8rem; 
 }
 @keyframes cursor{
   0%{
     opacity: 0;
-  }
+  } 
   100%{
     opacity: 1;
   }
@@ -269,7 +270,7 @@ main{
 }
 .card:hover {
   transform: scale(1.03);
-  box-shadow: 1px 1px 20px #00b4c8;
+  box-shadow: 1px 1px 10px #00b4c8;
 }
 .card-top{
   display: flex;
@@ -505,6 +506,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     max-width: 850px;
+    min-height: 200px;
   }
   .intro img {
     height: 260px;
