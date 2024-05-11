@@ -231,6 +231,7 @@ main {
 }
 .about .link {
 	color: white;
+	text-decoration: underline;
 }
 .about .link:hover {
 	color: #00b4c8;
