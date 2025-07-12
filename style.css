@@ -15,7 +15,7 @@ h2 {
 	text-align: center;
 	letter-spacing: 1px;
 	margin: 0 auto 3rem;
-	color: #00b4c8;
+	color: #d6a328;
 }
 h3 {
 	font-weight: 400;
@@ -40,7 +40,7 @@ a {
 	height: 55px;
 	top: 0;
 	padding: auto 2px;
-	background-color: #383c4a;
+	z-index: 10;
 }
 .nav-bar .logo {
 	text-decoration: none;
@@ -64,7 +64,7 @@ a {
 }
 
 .nav-bar li a:hover {
-	box-shadow: 2px 10px 1px -8px #00b4c8;
+	box-shadow: 2px 10px 1px -8px #d6a328;
 }
 #hamburger-menu {
 	display: flex;
@@ -109,7 +109,7 @@ a {
 	top: 54px;
 	right: -800px;
 	z-index: 50;
-	background-color: #383c4a;
+	background-color: #383C4A;
 	transition: 0.5s ease;
 }
 .active {
@@ -127,7 +127,7 @@ a {
 	transition: 200ms;
 }
 .drop-nav li a:hover {
-	box-shadow: 2px 10px 1px -8px #00b4c8;
+	box-shadow: 2px 10px 1px -8px #d6a328;
 }
 main {
 	display: flex;
@@ -136,14 +136,14 @@ main {
 }
 .landing {
 	width: 100vw;
-	background-color: #383c4a;
+	background-color: #383C4A;
 	padding-bottom: 3rem;
 }
 .intro {
 	display: flex;
 	flex-direction: column;
 	text-align: center;
-	color: black;
+	color: white;
 	margin: 5rem auto 0;
 	width: 95vw;
 	min-height: 600px;
@@ -154,6 +154,11 @@ main {
 	width: 220px;
 	border-radius: 50%;
 	margin-bottom: 1rem;
+	z-index: 10;
+}
+
+.about {
+	z-index: 10;
 }
 
 .about .name {
@@ -163,7 +168,7 @@ main {
 	line-height: 2.5rem;
 	letter-spacing: 1px;
 	text-align: center;
-	color: #00b4c8;
+	color: #d6a328;
 	border-radius: 10px;
 	position: relative;
 }
@@ -174,7 +179,7 @@ main {
 	width: 5px;
 	height: 0.5rem;
 	margin-top: 2.4rem;
-	border-right: 1.7rem solid #00b4c8;
+	border-right: 1.7rem solid #d6a328;
 	animation: cursor 1s infinite ease-in-out;
 }
 .about .job {
@@ -221,20 +226,20 @@ main {
 	color: white;
 }
 .about .linkedin:hover {
-	color: #00b4c8;
+	color: #d6a328;
 }
 .about .github {
 	color: white;
 }
 .about .github:hover {
-	color: #00b4c8;
+	color: #d6a328;
 }
 .about .link {
 	color: white;
 	text-decoration: underline;
 }
 .about .link:hover {
-	color: #00b4c8;
+	color: #d6a328;
 }
 .skills {
 	display: flex;
@@ -258,8 +263,7 @@ main {
 	height: 40px;
 	font-size: 1.5rem;
 	color: white;
-	background-color: #383c4a;
-	box-shadow: 1px 1px 3px #00b4c8;
+	background-color: #383C4A;
 	border-radius: 5px;
 }
 .skills ul li:hover {
@@ -287,13 +291,13 @@ main {
 	width: 300px;
 	height: 450px;
 	background-color: white;
-	box-shadow: 0.1px 0.1px 5px #00b4c8;
+	border: 1px solid #d6a328;
 	border-radius: 5px;
 	transition-duration: 100ms;
 }
 .card:hover {
 	transform: scale(1.03);
-	box-shadow: 1px 1px 10px #00b4c8;
+	box-shadow: 0.1px 0.1px 5px #d6a328;
 }
 .card-top {
 	display: flex;
@@ -316,6 +320,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	width: 90%;
+	margin-top: 1rem;
 }
 .card-detail h2 a {
 	color: white;
@@ -328,6 +333,11 @@ main {
 	letter-spacing: 2px;
 	text-align: center;
 }
+
+.card-detail p {
+	margin-top: 1rem;
+	text-align: center;
+}
 .card .buttons {
 	width: 100%;
 	display: flex;
@@ -338,10 +348,9 @@ main {
 #live {
 	text-decoration: none;
 	font-size: 1.5rem;
-	background-color: #383c4a;
+	background-color: #383C4A;
 	color: white;
 	border-radius: 5px;
-	box-shadow: 0px 0px 3px #00b4c8;
 	text-align: center;
 	width: 80px;
 	padding: 0.2rem;
@@ -351,15 +360,14 @@ main {
 #live:hover {
 	opacity: 0.95;
 	transform: scale(0.95);
-	background-color: #00b4c8;
+	background-color: #d6a328;
 }
 #project-github {
 	text-decoration: none;
 	font-size: 1.5rem;
-	background-color: #383c4a;
+	background-color: #383C4A;
 	color: white;
 	border-radius: 5px;
-	box-shadow: 0px 0px 3px #00b4c8;
 	text-align: center;
 	width: 80px;
 	padding: 0.2rem 0.5rem;
@@ -369,7 +377,7 @@ main {
 #project-github:hover {
 	opacity: 0.95;
 	transform: scale(0.95);
-	background-color: #00b4c8;
+	background-color: #d6a328;
 }
 .projects div p {
 	display: flex;
@@ -381,9 +389,11 @@ footer {
 	flex-direction: column;
 	align-items: center;
 	color: white;
-	margin: 0 auto;
+	margin: 0;
 	padding: 1rem 0;
-	background-color: #383c4a;
+	background-color: #383C4A;
+	width: 100%;
+	box-sizing: border-box;
 }
 
 footer h1 {
@@ -391,6 +401,7 @@ footer h1 {
 	color: white;
 	letter-spacing: 2px;
 	text-align: center;
+	z-index: 10;
 }
 footer section {
 	display: flex;
@@ -398,11 +409,13 @@ footer section {
 	flex-direction: column;
 	align-items: center;
 	width: 95vw;
+	z-index: 10;
 }
 footer section form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	z-index: 10;
 }
 footer section input {
 	border: none;
@@ -411,8 +424,8 @@ footer section input {
 	padding: 10px;
 	margin-bottom: 20px;
 	font-size: 1.5rem;
-	box-shadow: 1px 1px 3px #00b4c8;
 	border-radius: 5px;
+	z-index: 10;
 }
 footer section textarea {
 	width: 200px;
@@ -420,26 +433,26 @@ footer section textarea {
 	padding: 10px;
 	font-size: 1.5rem;
 	margin-bottom: 20px;
-	box-shadow: 1px 1px 3px #00b4c8;
 	border-radius: 5px;
+	z-index: 10;
 }
 footer section button {
 	letter-spacing: 2px;
 	height: 2.5rem;
 	border: none;
-	color: #383c4a;
+	color: #383C4A;
 	background-color: white;
-	box-shadow: 0px 0px 5px #00b4c8;
 	border-radius: 5px;
 	text-decoration: none;
 	font-size: 1.3rem;
 	width: 200px;
 	transition: 100ms;
 	margin-bottom: 2rem;
+	z-index: 10;
 }
 footer section button:hover {
 	transform: scale(0.95);
-	background-color: #00b4c8;
+	background-color: #d6a328;
 	color: white;
 	cursor: pointer;
 	opacity: 0.95;
@@ -451,28 +464,32 @@ footer h2 {
 	letter-spacing: 3px;
 	margin: 0;
 	color: white;
-	box-shadow: none;
+	z-index: 10;
 }
 footer ul {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-evenly;
+	z-index: 10;
 }
+
 footer ul li {
 	list-style: none;
 	margin: 15px;
 	text-align: center;
+	z-index: 10;
 }
 
 footer ul li a {
 	text-decoration: none;
 	color: white;
 	font-size: 2rem;
-	text-shadow: 0px 0px 0.5px #00b4c8;
+	text-shadow: 0px 0px 0.5px #d6a328;
 	transition: 500ms;
+	z-index: 10;
 }
 footer ul li a:hover {
-	color: #00b4c8;
+	color: #d6a328;
 }
 footer p {
 	color: white;
@@ -491,6 +508,7 @@ footer p {
 	.nav-bar .logo {
 		font-size: 3rem;
 		margin-left: 0.5rem;
+		z-index: 10;
 	}
 	.nav-bar ol {
 		display: flex;
@@ -540,7 +558,7 @@ footer p {
 		height: 0.5rem;
 		margin-top: 2.1rem;
 		width: 5px;
-		border-right: 1.5rem solid #00b4c8;
+		border-right: 1.5rem solid #d6a328;
 	}
 	.about .job {
 		font-size: 1.5rem;
@@ -664,3 +682,4 @@ footer p {
 		width: 300px;
 	}
 }
+
